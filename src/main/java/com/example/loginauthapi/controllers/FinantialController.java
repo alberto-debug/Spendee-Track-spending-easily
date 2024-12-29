@@ -12,6 +12,5 @@ import org.springframework.web.bind.annotation.RestController;
 public class FinantialController {
 
     private final TransactionService transactionService;
-    
 
 }
