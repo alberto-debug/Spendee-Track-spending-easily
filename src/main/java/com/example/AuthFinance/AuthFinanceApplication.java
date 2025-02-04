@@ -1,14 +1,14 @@
-package com.example.AuthandFinance;
+package com.example.AuthFinance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AuthandFinanceApplication {
+public class AuthFinanceApplication {
 
 	public static void main(String[] args) {
 		
-		SpringApplication.run(AuthandFinanceApplication.class, args);
+		SpringApplication.run(AuthFinanceApplication.class, args);
 	}
 
 }
