@@ -1,114 +1,113 @@
-# Spring Boot Login & Registration API
+# 🚀 Spring Boot Login & Registration API
 
-Welcome to the **Spring Boot Login & Registration API**! This project provides a secure and robust API for handling user authentication and registration using **Spring Boot**, **Spring Security**, and **JWT**.
-
----
-
-## Features
-
-- **JWT Authentication** for secure user login and session management.
-- **Password Encryption** using `BCrypt`.
-- **REST API** endpoints for **Login**, **Registration**, and **Profile**.
-- **MySQL / H2 Database** integration with **Spring Data JPA**.
-- **Spring Security** configuration for endpoint protection.
-- **User roles and access control**.
-- **Custom UserDetailsService** for managing user credentials.
+Welcome to **Spring Boot Login & Registration API**! 🔐 This project provides a secure and robust API for user authentication and registration using **Spring Boot**, **Spring Security**, and **JWT**. 🛡️
 
 ---
 
-## Technology Stack
+## 🌟 Features
 
-- **Backend**: Spring Boot, Spring Security, Spring Data JPA
-- **Authentication**: JWT (JSON Web Tokens)
-- **Database**: MySQL / H2
-- **Build Tool**: Maven
-- **Language**: Java
+✅ **JWT Authentication** for secure login and session management.  
+✅ **Password Encryption** using `BCrypt`. 🔒  
+✅ **REST API** with endpoints for **Login**, **Registration**, and **User Profile**. 🌐  
+✅ **Integration with MySQL / H2 Database** using **Spring Data JPA**. 🗄️  
+✅ **Spring Security** for endpoint protection. 🔑  
+✅ **Role-Based Access Control** for user roles. 👥  
+✅ **Custom UserDetailsService** to manage credentials. 🛠️  
 
 ---
 
-## Getting Started
+## 🏗️ Technology Stack
 
-### Prerequisites
-Ensure you have the following installed:
+🔹 **Backend**: Spring Boot, Spring Security, Spring Data JPA  
+🔹 **Authentication**: JWT (JSON Web Tokens)  
+🔹 **Database**: MySQL / H2  
+🔹 **Build Tool**: Maven  
+🔹 **Language**: Java ☕  
 
-- **Java 17+**
-- **Maven**
-- **MySQL** (optional if using H2 for local development)
+---
 
-### Installation Steps
+## 🚀 Getting Started
 
-1. **Clone the repository**
-   ```bash
+### 📌 Prerequisites
+Ensure you have installed:  
+
+- **Java 17+** ☕  
+- **Maven** ⚙️  
+- **MySQL** (optional if using H2 for local development) 🛢️  
+
+### 📥 Installation
+
+1️⃣ **Clone the repository** 📂  
+```bash
    git clone https://github.com/Dev-Albertojunior1/login-app-backend-main.git
    cd spring-boot-login-registration-api
+```
 
-2. **Configure your Database**
+2️⃣ **Configure Your Database** 🗄️  
+- For **MySQL**: edit `application.properties` or `application.yml` with your credentials.  
+- For **H2 Database**: skip MySQL configuration for local testing.  
 
-   - For **MySQL**: update the `application.properties` or `application.yml` with your MySQL connection details.
-   - For **H2 Database**: you can skip the MySQL setup for local testing, as H2 is an in-memory database.
-
-3. **Run the Application**
-   ```bash
+3️⃣ **Run the application** ▶️  
+```bash
    mvn spring-boot:run
-   ```
+```
 
-4. Access the application via `http://localhost:8080`.
-
----
-
-## API Endpoints
-
-| HTTP Method | Endpoint              | Description                   | Requires Auth? |
-|-------------|-----------------------|-------------------------------|----------------|
-| `POST`      | `/auth/register`       | Register a new user            | No             |
-| `POST`      | `/auth/login`          | Login and get JWT token        | No             |
-| `GET`       | `/users/me`            | Get logged-in user's profile   | Yes            |
-
-- **Authorization**: Protected routes require the JWT token in the `Authorization` header as:  
-  ```bash
-  Authorization: Bearer <JWT_TOKEN>
-  ```
+4️⃣ **Access the API** via `http://localhost:8080`. 🌍
 
 ---
 
-## Project Structure
+## 🔗 API Endpoints
+
+| HTTP Method | Endpoint              | Description                   | Authentication? |
+|-------------|-----------------------|-------------------------------|--------------|
+| `POST`      | `/auth/register`       | Register a new user           | No           |
+| `POST`      | `/auth/login`          | Login and obtain JWT          | No           |
+| `GET`       | `/users/me`            | Get logged-in user profile    | Yes          |
+
+🔑 **Authentication**: Protected routes require a JWT token in the `Authorization` header:  
+```bash
+Authorization: Bearer <JWT_TOKEN>
+```
+
+---
+
+## 📂 Project Structure
 
 ```
 src
 ├── main
 │   ├── java
 │   │   └── com.example.project
-│   │       ├── config         # Security and JWT Configurations
-│   │       ├── controller     # Controllers for authentication and user management
-│   │       ├── dto            # Data Transfer Objects for Login and Registration
-│   │       ├── entity         # User Entity
-│   │       ├── repository     # JPA Repository for User
-│   │       ├── service        # Services for User Management & JWT
+│   │       ├── config         # Security and JWT Configurations 🔐
+│   │       ├── controller     # Authentication and User Controllers 🚀
+│   │       ├── dto            # Data Transfer Objects 📨
+│   │       ├── entity         # User Entity 👤
+│   │       ├── repository     # JPA Repository 🔍
+│   │       ├── service        # Services for Authentication and JWT 🛠️
 │   └── resources
-│       ├── application.yml    # Database Configuration
-└── pom.xml                    # Project Dependencies and Plugins
+│       ├── application.yml    # Database Configuration ⚙️
+└── pom.xml                    # Project Dependencies 📦
 ```
 
 ---
 
-## JWT Token Example
+## 🔑 Example JWT Token
 
-After successful login, you'll receive a JWT token that looks like this:
+After a successful login, you will receive a JWT token:
 
 ```
 eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lQGVtYWlsLmNvbSIsImlhdCI6MTYyNjU5MjA1MywiZXhwIjoxNjI2NTk1NjUzfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 ```
 
-Use this token to authenticate protected routes by adding it to the request headers.
+Use this token to access protected routes by adding it to the request headers. 🛡️
 
 ---
 
-## Configuration
+## ⚙️ Configuration
 
-You can customize the application settings by modifying the `application.properties` or `application.yml` file.
+Customize the settings by modifying `application.properties` or `application.yml`.  
 
-### Example for MySQL:
-
+### 🛢️ Example for MySQL:
 ```yaml
 spring:
   datasource:
@@ -127,9 +126,9 @@ spring:
 
 ---
 
-## Testing the API
+## 🛠️ Testing the API
 
-Use tools like **Postman** or **Insomnia** to test the API endpoints. Here’s an example request to register a new user:
+Use tools like **Postman** or **Insomnia** to test the endpoints. Here’s an example request to register a new user:
 
 ```json
 POST /auth/register
@@ -142,27 +141,27 @@ POST /auth/register
 
 ---
 
-## Built With
+## 🏗️ Built With
 
-- [Spring Boot](https://spring.io/projects/spring-boot) - Backend Framework
-- [JWT](https://jwt.io/) - Token-based Authentication
-- [Maven](https://maven.apache.org/) - Build Tool
-
----
-
-## Contributing
-
-Contributions are always welcome! Feel free to submit a pull request or open an issue to help improve this project. Check out the [contribution guidelines](CONTRIBUTING.md) for more information.
+🔹 [Spring Boot](https://spring.io/projects/spring-boot) - Backend Framework  
+🔹 [JWT](https://jwt.io/) - Token-Based Authentication 🔐  
+🔹 [Maven](https://maven.apache.org/) - Build Tool ⚙️  
 
 ---
 
-## License
+## 🤝 Contribution
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are always welcome! 💡 Open a PR or an issue to suggest improvements. Check out the [contribution guidelines](CONTRIBUTING.md). 📜
 
 ---
 
-## Contact
+## 📜 License
 
-Feel free to reach out via [Email](albertojunior848423803@gmail.com) or create an issue for any questions, bugs, or feature requests!
+This project is under the **MIT License** - see the [LICENSE](LICENSE) file for more details. 📄
+
+---
+
+## 📩 Contact
+
+Feel free to reach out via [Email](mailto:albertojunior848423803@gmail.com) or open an issue for any questions, bugs, or suggestions! ✉️
 
