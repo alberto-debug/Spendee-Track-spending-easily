@@ -3,6 +3,7 @@ package com.example.AuthFinance.infra.security;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.AuthFinance.domain.user.User;
 import jakarta.websocket.server.ServerEndpoint;
 import org.springframework.stereotype.Service;
@@ -15,11 +16,11 @@ import java.util.concurrent.ExecutionException;
 
 @Service
 public class TokenService {
-    private String Token;
+    private String secret;
 
     public String generateToken(User user){
         try {
-            Algorithm algorithm = Algorithm.HMAC256(Token);
+            Algorithm algorithm = Algorithm.HMAC256(secret);
             String token = JWT.create()
                     .withIssuer("login-auth-api")
                     .withSubject(user.getEmail())
@@ -32,8 +33,19 @@ public class TokenService {
         }
     }
 
-    public String validateToken(User user){
+    public String validateToken(String token){
+        try {
 
+            Algorithm algorithm = Algorithm.HMAC256(secret);
+                    return JWT.require(algorithm)
+                            .withIssuer("login-auth-api")
+                            .build()
+                            .verify(token)
+                            .getSubject();
+
+        }catch (JWTVerificationException exception){
+            return null;
+        }
     }
 
 
