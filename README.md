@@ -1,4 +1,4 @@
-# 🚀 Spring Boot Login & Registration API
+# 🚀 Spring Boot Login & Registration API && Financial Tracking App 
 
 Welcome to **Spring Boot Login & Registration API**! 🔐 This project provides a secure and robust API for user authentication and registration using **Spring Boot**, **Spring Security**, and **JWT**. 🛡️
 
