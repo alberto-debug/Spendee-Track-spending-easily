@@ -12,6 +12,8 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
+
+//This class is used to extract the JWT from the requisition , and validate it using tokenService , if valid it will proceed to get the user from the database
 @Component
 public class SecurityFilter extends OncePerRequestFilter {
 
