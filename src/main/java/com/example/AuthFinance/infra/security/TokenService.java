@@ -6,6 +6,7 @@ import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.AuthFinance.domain.user.User;
 import jakarta.websocket.server.ServerEndpoint;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -15,6 +16,7 @@ import java.util.concurrent.ExecutionException;
 
 @Service
 public class TokenService {
+    @Value("${api.security.token.secret}")
     private String secret;
 
     public String generateToken(User user){
