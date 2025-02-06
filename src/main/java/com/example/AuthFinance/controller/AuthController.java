@@ -1,6 +1,7 @@
 package com.example.AuthFinance.controller;
 
 import com.example.AuthFinance.domain.user.User;
+import com.example.AuthFinance.dto.LoginRequestDTO;
 import com.example.AuthFinance.dto.RegisterRequestDTO;
 import com.example.AuthFinance.dto.ResponseDTO;
 import com.example.AuthFinance.infra.security.TokenService;
@@ -44,5 +45,14 @@ public class AuthController {
         return ResponseEntity.badRequest().build();
     }
 
-
+    @GetMapping("/login")
+    public ResponseEntity login(@RequestBody LoginRequestDTO body){
+        User user = this.userRepository.findByEmail(body.email()).orElseThrow(()-> new RuntimeException("USer "));
+        if (passwordEncoder.matches(body.Password(), user.getPassword())){
+            String token = this.tokenService.generateToken(user);
+            return ResponseEntity.ok(new ResponseDTO(user.getName(), token));
+        }
+        return  ResponseEntity.badRequest().build();
+    }
+    
 }
