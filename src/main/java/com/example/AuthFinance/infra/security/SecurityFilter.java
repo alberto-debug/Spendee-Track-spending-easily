@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Collections;
 
-
 //This class is used to extract the JWT from the requisition , and validate it using tokenService , if valid it will proceed to get the user from the database
 @Component
 public class SecurityFilter extends OncePerRequestFilter {
@@ -29,25 +28,25 @@ public class SecurityFilter extends OncePerRequestFilter {
     @Autowired
     private UserRepository userRepository;
 
-
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+            throws ServletException, IOException {
 
         var token = this.recoverToken(request);
         var login = tokenService.validateToken(token);
 
-        if (login!= null){
+        if (login != null) {
             User user = userRepository.findByEmail(login).orElseThrow(() -> new RuntimeException("User not found"));
             var authorities = Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
-            var authentication = new UsernamePasswordAuthenticationToken(user,null,authorities);
+            var authentication = new UsernamePasswordAuthenticationToken(user, null, authorities);
             SecurityContextHolder.getContext().setAuthentication(authentication);
         }
         filterChain.doFilter(request, response);
     }
 
-    private String recoverToken(HttpServletRequest request){
+    private String recoverToken(HttpServletRequest request) {
         var authHeader = request.getHeader("Authorization");
-        if (authHeader == null){
+        if (authHeader == null) {
             return null;
         }
         return authHeader.replace("Bearer ", "");
