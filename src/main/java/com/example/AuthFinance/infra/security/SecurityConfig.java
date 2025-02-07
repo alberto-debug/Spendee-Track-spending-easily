@@ -22,8 +22,6 @@ public class SecurityConfig {
 
     @Autowired
     SecurityFilter securityFilter;
-
-
     
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
