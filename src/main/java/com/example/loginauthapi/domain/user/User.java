@@ -2,14 +2,12 @@ package com.example.loginauthapi.domain.user;
 
 
 
-import com.example.loginauthapi.domain.role.AppRole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.management.relation.Role;
 import java.util.Collection;
 
 @Entity
@@ -32,11 +30,6 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "users_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
-    private Collection<AppRole> roles;
+
+
 }
