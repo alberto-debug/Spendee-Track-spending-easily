@@ -31,8 +31,8 @@ public class AuthController {
     @Autowired
     private final UserRepository repository;
 
-    @Autowired
-    private RoleRepository roleRepository;
+//    @Autowired
+//    private RoleRepository roleRepository;
 
     @Autowired
     private final PasswordEncoder passwordEncoder;
@@ -110,8 +110,8 @@ public class AuthController {
             newUser.setPassword(passwordEncoder.encode(body.password()));
 
             //Assign default 'ROLE_USER'
-            AppRole userRole = roleRepository.findByName("ROLE_USER").orElseThrow(() ->new RuntimeException("ROLE USER NOT FOUND"));
-            newUser.setRoles(Collections.singleton(userRole));
+//            AppRole userRole = roleRepository.findByName("ROLE_USER").orElseThrow(() ->new RuntimeException("ROLE USER NOT FOUND"));
+//            newUser.setRoles(Collections.singleton(userRole));
 
 
             repository.save(newUser);
