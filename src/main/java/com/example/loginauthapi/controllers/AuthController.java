@@ -41,7 +41,6 @@ public class AuthController {
         return ("Welcome home");
     }
 
-
     @PostMapping("/login")
     public ResponseEntity login(@RequestBody LoginRequestDTO body){
         User user = this.repository.findByEmail(body.email()).orElseThrow(() -> new RuntimeException("User not found"));
@@ -54,34 +53,6 @@ public class AuthController {
         return ResponseEntity.badRequest().build();
 
     }
-
-
-//    @PostMapping("/register")
-//    public ResponseEntity register(@RequestBody RegisterRequestDTO body){
-//
-//        //verify if the user is in the database
-//        Optional<User> user = this.repository.findByEmail(body.email());
-//
-//        //if its in database, return bad request
-//        if (repository.findByEmail(body.email()).isPresent()){
-//            return ResponseEntity.status(409).body("User already exists with this email");
-//        }
-//
-//            User newUser = new User();
-//            newUser.setName(body.name());
-//            newUser.setEmail(body.email());
-//            newUser.setPassword(passwordEncoder.encode(body.password()));
-//
-//            //save the new user in the database
-//            this.repository.save(newUser);
-//
-//            //Generate the token of authentication
-//            String token = this.tokenService.generateToken(newUser);
-//
-//            //return the request with the name of the user and token
-//            return ResponseEntity.ok(new ResponseDTO(newUser.getName(), token));
-//
-//    }
 
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody RegisterRequestDTO body) {
@@ -101,11 +72,6 @@ public class AuthController {
             newUser.setName(body.name());
             newUser.setEmail(body.email());
             newUser.setPassword(passwordEncoder.encode(body.password()));
-
-            //Assign default 'ROLE_USER'
-//            AppRole userRole = roleRepository.findByName("ROLE_USER").orElseThrow(() ->new RuntimeException("ROLE USER NOT FOUND"));
-//            newUser.setRoles(Collections.singleton(userRole));
-
 
             repository.save(newUser);
 
