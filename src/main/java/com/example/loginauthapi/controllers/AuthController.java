@@ -23,8 +23,7 @@ public class AuthController {
 
     @Autowired
     private final UserRepository repository;
-
-
+    
 //    @Autowired
 //    private RoleRepository roleRepository;
 
