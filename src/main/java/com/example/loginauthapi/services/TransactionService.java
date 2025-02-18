@@ -48,6 +48,5 @@ public class TransactionService {
 
     public Map<String, Double> getFinancialSummary(String userEmail){
 
-
     }
 }
