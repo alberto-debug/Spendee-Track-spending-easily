@@ -19,6 +19,7 @@ public class TransactionService {
                 .orElseThrow(()-> new RuntimeException("User Not Found"));
 
         transaction.setUser(user);
+        return transactionRepository.save(transaction);
 
     }
 }
