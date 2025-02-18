@@ -53,6 +53,19 @@ public class TransactionService {
 
         List<Transaction> transactions = transactionRepository.findByUser(user);
 
-        double totalIncome =
+        double totalIncome = transactions.stream()
+                .filter(t-> t.getType()== TransactionType.INCOME)
+                .mapToDouble(Transaction::getAmount)
+                .sum();
+
+        double totalExpense = transactions.stream()
+                .filter(t -> t.getType()== TransactionType.EXPENSE)
+                .mapToDouble(Transaction::getAmount)
+                .sum();
+
+        double balance = totalIncome - totalExpense;
+
+        return Map.of("Total Income: ",totalIncome, " total Expense ", totalExpense, "balance ", balance );
     }
+
 }
