@@ -17,9 +17,11 @@ public class TransactionService {
 
     public Transaction addTransaction(Transaction transaction, String userEmail) {
 
-        User user = userRepository.findByEmail(userEmail);
+        User user = userRepository.findByEmail(userEmail).orElseThrow(()-> new RuntimeException("User Not Found"));
 
-        return null;
+        transaction.setUser(user);
+
+        return ;
 
     }
 }
