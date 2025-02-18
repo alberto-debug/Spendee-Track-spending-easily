@@ -8,6 +8,8 @@ import com.example.loginauthapi.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class TransactionService {
@@ -22,5 +24,9 @@ public class TransactionService {
         transaction.setUser(user);
         return transactionRepository.save(transaction);
 
+    }
+
+    public List<Transaction> getUSerTransaction(String email){
+        
     }
 }
