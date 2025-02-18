@@ -18,7 +18,7 @@ public class TransactionService {
         User user = userRepository.findByEmail(userEmail)
                 .orElseThrow(()-> new RuntimeException("User Not Found"));
 
-        transaction.
+        transaction.setUser(user);
 
     }
 }
