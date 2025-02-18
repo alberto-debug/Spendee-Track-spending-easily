@@ -1,6 +1,7 @@
 package com.example.loginauthapi.services;
 
 import com.example.loginauthapi.domain.user.Transaction;
+import com.example.loginauthapi.domain.user.TransactionType;
 import com.example.loginauthapi.domain.user.User;
 import com.example.loginauthapi.repositories.TransactionRepository;
 import com.example.loginauthapi.repositories.UserRepository;
@@ -11,4 +12,10 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class TransactionService {
 
+    private final TransactionRepository transactionRepository;
+    private final UserRepository userRepository;
+
+    public Transaction addTransaction(Transaction transaction, String userEmail){
+
+    }
 }
