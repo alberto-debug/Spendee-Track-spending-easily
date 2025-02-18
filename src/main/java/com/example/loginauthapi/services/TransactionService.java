@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -43,5 +44,10 @@ public class TransactionService {
         }
 
         transactionRepository.delete(transaction);
+    }
+
+    public Map<String, Double> getFinancialSummary(String userEmail){
+
+
     }
 }
