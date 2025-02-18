@@ -27,7 +27,7 @@ public class TransactionService {
 
     }
 
-    public List<Transaction> getUSerTransaction(String userEmail){
+    public List<Transaction> getUserTransaction(String userEmail){
 
         User user = userRepository.findByEmail(userEmail)
                 .orElseThrow(()-> new RuntimeException("User Not found"));
