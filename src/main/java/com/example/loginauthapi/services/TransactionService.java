@@ -11,15 +11,4 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class TransactionService {
 
-    private final TransactionRepository transactionRepository;
-    private final UserRepository userRepository;
-
-    public Transaction addTransaction(Transaction transaction, String userEmail){
-        User user = userRepository.findByEmail(userEmail)
-                .orElseThrow(()-> new RuntimeException("User Not Found"));
-
-        transaction.setUser(user);
-        return transactionRepository.save(transaction);
-
-    }
 }
