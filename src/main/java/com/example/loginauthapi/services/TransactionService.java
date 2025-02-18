@@ -53,6 +53,6 @@ public class TransactionService {
 
         List<Transaction> transactions = transactionRepository.findByUser(user);
 
-
+        double totalIncome =
     }
 }
