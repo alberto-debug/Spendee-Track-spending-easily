@@ -9,6 +9,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/finance")
@@ -33,6 +34,11 @@ public class FinancialController {
     public ResponseEntity<Void> deleteTransactions(@PathVariable Long id, @AuthenticationPrincipal User user){
         transactionService.deleteTransaction(id, user.getEmail());
         return ResponseEntity.badRequest().build();
+    }
+
+    @GetMapping("/summary")
+    public ResponseEntity<Map<String , Double>> getFinancialSummary(@AuthenticationPrincipal User user){
+        return ResponseEntity.ok(transactionService.getFinancialSummary(user.getEmail()));
     }
 
 }
