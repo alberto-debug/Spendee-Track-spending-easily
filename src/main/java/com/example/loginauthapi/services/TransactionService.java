@@ -48,5 +48,11 @@ public class TransactionService {
 
     public Map<String, Double> getFinancialSummary(String userEmail){
 
+        User user = userRepository.findByEmail(userEmail)
+                .orElseThrow(()-> new RuntimeException("User Not found"));
+
+        List<Transaction> transactions = transactionRepository.findByUser(user);
+
+
     }
 }
