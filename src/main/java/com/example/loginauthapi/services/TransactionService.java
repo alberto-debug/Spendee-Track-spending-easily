@@ -15,7 +15,11 @@ public class TransactionService {
     private final TransactionRepository transactionRepository;
     private final UserRepository userRepository;
 
-    public Transaction addTransaction(Transaction transaction, String userEmail){
+    public Transaction addTransaction(Transaction transaction, String userEmail) {
+
+        User user = userRepository.findByEmail(userEmail);
+
+        return null;
 
     }
 }
