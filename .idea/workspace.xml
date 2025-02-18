@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87675954-5604-402e-b0a7-90ce99da4c39" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinantialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,22 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720803460079</updated>
-    </task>
-    <task id="LOCAL-00038" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737059697978</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1737059697978</updated>
-    </task>
-    <task id="LOCAL-00039" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737062136676</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1737062136676</updated>
     </task>
     <task id="LOCAL-00040" summary="changes">
       <option name="closed" value="true" />
@@ -497,7 +479,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739901950465</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="changes">
+      <option name="closed" value="true" />
+      <created>1739903536350</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1739903536350</updated>
+    </task>
+    <task id="LOCAL-00088" summary="changes">
+      <option name="closed" value="true" />
+      <created>1739903550147</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1739903550147</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="UnknownFeatures">

@@ -6,10 +6,9 @@ import com.example.loginauthapi.services.TransactionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/finance")
@@ -25,6 +24,15 @@ public class FinancialController {
 
     }
 
+    @GetMapping("/transactions")
+    public ResponseEntity<List<Transaction>> getUserTransactions(@AuthenticationPrincipal User user){
+        return ResponseEntity.ok(transactionService.getUserTransaction(user.getEmail()));
+    }
 
+    @DeleteMapping("/transaction/{id}")
+    public ResponseEntity<Void> deleteTransactions(@PathVariable Long id, @AuthenticationPrincipal User user){
+        transactionService.deleteTransaction(id, user.getEmail());
+        return ResponseEntity.badRequest().build();
+    }
 
 }
