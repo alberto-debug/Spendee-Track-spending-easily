@@ -21,9 +21,10 @@ public class FinancialController {
     @PostMapping("/transaction")
     public ResponseEntity<Transaction> addTransaction(@RequestBody Transaction transaction,
                                                       @AuthenticationPrincipal User user){
-
         return ResponseEntity.ok(transactionService.addTransaction(transaction, user.getEmail()));
 
     }
+
+
 
 }
