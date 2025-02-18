@@ -5,7 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87675954-5604-402e-b0a7-90ce99da4c39" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/TransactionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/TransactionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/LoginRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/LoginRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/cors/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/cors/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/loginauthapi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/TransactionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/TransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/TransactionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/loginauthapi/LoginAuthApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/loginauthapi/LoginAuthApiApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +80,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.LoginAuthApiApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alberto/Desktop/Projects/spring/login-app-backend-main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LoginAuthApiApplication.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/alberto/Desktop/Projects/spring/login-app-backend-main",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="LoginAuthApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.loginauthapi.LoginAuthApiApplication" />
@@ -102,22 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720803460079</updated>
-    </task>
-    <task id="LOCAL-00040" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737139671951</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1737139671952</updated>
-    </task>
-    <task id="LOCAL-00041" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737140022843</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1737140022843</updated>
     </task>
     <task id="LOCAL-00042" summary="changes">
       <option name="closed" value="true" />
@@ -495,7 +507,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739903550147</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="changes">
+      <option name="closed" value="true" />
+      <created>1739903889513</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1739903889513</updated>
+    </task>
+    <task id="LOCAL-00090" summary="changes">
+      <option name="closed" value="true" />
+      <created>1739903991660</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1739903991660</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="UnknownFeatures">
