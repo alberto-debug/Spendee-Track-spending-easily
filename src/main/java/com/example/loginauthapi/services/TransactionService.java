@@ -33,4 +33,11 @@ public class TransactionService {
 
         return transactionRepository.findByUser(user);
     }
+
+    public void deleteTransaction(Long id, String userEmail){
+        Transaction transaction = transactionRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("User not found"));
+
+        return
+    }
 }
