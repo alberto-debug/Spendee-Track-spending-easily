@@ -36,8 +36,12 @@ public class TransactionService {
 
     public void deleteTransaction(Long id, String userEmail){
         Transaction transaction = transactionRepository.findById(id)
-                .orElseThrow(()-> new RuntimeException("User not found"));
+                .orElseThrow(()-> new RuntimeException("Transaction not found"));
 
-        return
+        if (!transaction.getUser().getEmail().equals(userEmail)){
+            throw new RuntimeException("Unauthorized Action");
+        }
+
+        transactionRepository.delete(transaction);
     }
 }
