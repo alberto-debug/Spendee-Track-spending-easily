@@ -6,34 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87675954-5604-402e-b0a7-90ce99da4c39" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/controllers/FinancialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/services/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/LoginAuthApiApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/TransactionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/TransactionType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/domain/user/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/LoginRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/LoginRequestDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/RegisterRequestDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/dto/ResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/cors/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/cors/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/CustomUserDetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/SecurityFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/infra/security/TokenService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/loginauthapi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/TransactionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/TransactionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/services/TransactionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/loginauthapi/validation/ValidationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/loginauthapi/LoginAuthApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/loginauthapi/LoginAuthApiApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,14 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720803460079</updated>
-    </task>
-    <task id="LOCAL-00042" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737140181160</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1737140181160</updated>
     </task>
     <task id="LOCAL-00043" summary="changes">
       <option name="closed" value="true" />
@@ -523,7 +487,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739903991660</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="changes">
+      <option name="closed" value="true" />
+      <created>1739914511323</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1739914511324</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="UnknownFeatures">
