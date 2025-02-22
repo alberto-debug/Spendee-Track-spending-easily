@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87675954-5604-402e-b0a7-90ce99da4c39" name="Changes" comment="changes">
+    <list default="true" id="87675954-5604-402e-b0a7-90ce99da4c39" name="Changes" comment="changes1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,22 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720803460079</updated>
-    </task>
-    <task id="LOCAL-00049" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737316632162</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1737316632162</updated>
-    </task>
-    <task id="LOCAL-00050" summary="changes">
-      <option name="closed" value="true" />
-      <created>1737316639251</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1737316639252</updated>
     </task>
     <task id="LOCAL-00051" summary="changes">
       <option name="closed" value="true" />
@@ -496,7 +479,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740003477866</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="changes">
+      <option name="closed" value="true" />
+      <created>1740004124863</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1740004124864</updated>
+    </task>
+    <task id="LOCAL-00099" summary="changes1">
+      <option name="closed" value="true" />
+      <created>1740004143258</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1740004143258</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -519,6 +518,7 @@
     </ignored-roots>
     <MESSAGE value="register and login with error handling" />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="changes1" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes1" />
   </component>
 </project>
