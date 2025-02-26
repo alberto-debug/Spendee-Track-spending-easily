@@ -7,9 +7,11 @@
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/dto/ResponseDTO.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/infra/security/SecurityConfig.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/repositories/UserRepository.java
+/home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/controllers/HealthController.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/controllers/UserController.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/LoginAuthApiApplication.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/repositories/TransactionRepository.java
+/home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/services/KeepAliveService.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/domain/user/Transaction.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/infra/security/CustomUserDetailsService.java
 /home/alberto/Desktop/Projects/spring/login-app-backend-main/src/main/java/com/example/loginauthapi/controllers/AuthController.java

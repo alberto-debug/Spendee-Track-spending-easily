@@ -27,7 +27,7 @@ public class Transaction {
     private double amount;
     private LocalDate date;
 
-    
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
