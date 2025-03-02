@@ -42,7 +42,9 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // ✅ Permite requisições OPTIONS (CORS)
                         .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/user/").permitAll()
                         .requestMatchers("/finance/**").authenticated()
+                        .requestMatchers("/tasks/**").authenticated()
                         .requestMatchers("/health").permitAll()
                         .anyRequest().authenticated()
                 )
@@ -71,10 +73,10 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000", "https://albertojunior.me")); // ✅ Permite o frontend
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedOrigins(List.of("http://localhost:3000", "https://albertojunior.me")); // Corrected URL
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
-        configuration.setAllowCredentials(true); // ✅ Permite cookies/autenticação
+        configuration.setAllowCredentials(true); // Allows cookies/authentication
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
