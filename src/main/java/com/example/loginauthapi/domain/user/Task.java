@@ -28,6 +28,7 @@ public class Task {
     @Enumerated(EnumType.STRING)
     private TaskStatus status;
 
+
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
